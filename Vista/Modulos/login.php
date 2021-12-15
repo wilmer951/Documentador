@@ -4,23 +4,36 @@
 
 
 
-<form action="">
 
 
-<div class="form-floating">
-  <input type="text" class="form-control mb-2" id="npreparacion" placeholder="Npreparacíon" maxlength="10" name="codigoVerficiacion" required>
-  <label for="npreparacion" class="floatinginputtext">Usuario</label>
-</div>
+
+<form class="formlogin" method="post">
+  
+  <div class="row">
+        <div class="form-group">
+            <label>User</label>
+            <input type="text" name="nameUserLogin" class="inputmayuscula" required>
+            <div class="line"></div>
+        </div>
+  </div>
+  
 
 
-<div class="form-floating">
-  <input type="text" class="form-control" id="npreparacion" placeholder="Npreparacíon" maxlength="10" name="codigoVerficiacion" required>
-  <label for="npreparacion" class="floatinginputtext">Contraseña</label>
-</div>
+  <div class="row">
+      <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="namePasswordLogin" required>
+          <div class="line"></div>
+      </div>
+    </div>
 
+  <div class="row">
+  <button  class="btn" type="submit">Ingresar</button>
+  </div>
+
+			
 
 </form>
-
 
 
 
