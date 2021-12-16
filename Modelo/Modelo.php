@@ -16,7 +16,8 @@ class ModulosMVC
 
 				if(
 						$enlaces=="home"||
-						$enlaces=="login"
+						$enlaces=="login"||
+						$enlaces=="interfaz"
 						
 						
 						

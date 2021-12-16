@@ -1,5 +1,5 @@
 <div class="divlogin">
-<h1>Login</h1>
+<h1 class="mb-5">Login</h1>
 
 
 
@@ -28,7 +28,7 @@
     </div>
 
   <div class="row">
-  <button  class="btn" type="submit">Ingresar</button>
+  <button  class=" btn btn-sm btnone mt-5" type="submit">Ingresar</button>
   </div>
 
 			
