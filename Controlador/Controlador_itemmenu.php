@@ -15,7 +15,9 @@
 
                           echo '   
                           <tr>
-                          <td>'.$item["cmd_des"].'</td>
+                          
+                          <td><button>'.$item["cmd_des"].'</button></td>
+                          <hr>
                           </tr>
                           ';
 
@@ -24,7 +26,7 @@
                 }
 
 
-                if ($itemmenu=="psw") {
+                if ($itemmenu=="pass") {
                     
 
                     $respuesta = Datositemmenu::consultaItemdelo("psw");
@@ -33,7 +35,11 @@
 
                           echo '   
                           <tr>
-                          <td>'.$item["cmd_des"].'</td>
+                          <td>'.$item["psw_apli"].'</td>
+                          <td>
+                          <div><button>'.$item["psw_usu"].'</button></div>
+                          <button>'.$item["psw_psw"].'</button></td>
+                          
                           </tr>
                           ';
 

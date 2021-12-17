@@ -169,4 +169,40 @@ width: 100%;
 
 /* LOGIN*/
 
+.offcanvas-body table {
+  width: 100%;
+  
+}
 
+
+.offcanvas-body table tr td {
+  
+  
+  font-size: 14px;
+}
+
+.offcanvas-body button{
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+
+}
+.offcanvas-body button:hover{
+
+color: white;
+background: var(--original);
+
+}
+
+
+
+
+
+/* TABLE ITEMMENU*/
+
+
+/* TABLE ITEMMENU*/

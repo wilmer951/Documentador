@@ -21,7 +21,9 @@ $("#itemcomandos").click(function(){
 		success:function(respuesta){
 
 
-            $("#tableitemhead").html('<tr><td>Descripción</td></tr>');
+            $("#tableitemhead").html('<tr>'+
+											'<th class="text-center"></th>'+
+											'</tr>');
             $("#tableitembody").html(respuesta);   
 
             console.log(respuesta);
@@ -33,31 +35,48 @@ $("#itemcomandos").click(function(){
 	});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        });
+ });
     
 
     
 
-$("#itemutilidades").click(function(){
 
-            $("#offcanvas-title").html('Utilidades');    
-        
-            
-            
-});
+
+	$("#itemutilidades").click(function(){
+
+		$("#offcanvas-title").html('Passwords');    
+	
+		
+		var itemmenu='pass';
+	
+	
+		var datos = new FormData();
+		datos.append("itemmenu", itemmenu);
+	
+		
+		$.ajax({
+			url:"Vista/Modulos/ajax/ajax_itemmenu.php",
+			method:"POST",
+			data: datos,
+			cache: false,
+			contentType: false,
+			processData: false,
+			
+			success:function(respuesta){
+	
+	
+				$("#tableitemhead").html('<tr>'+
+												'<th class="text-center"></th>'+
+												'</tr>');
+				$("#tableitembody").html(respuesta);   
+	
+				console.log(respuesta);
+	
+		
+	
+			}
+	
+		});
+	
+	
+	 });

@@ -64,16 +64,20 @@ menu
   </div>
   <div class="offcanvas-body">
    
-  <div class="table-responsive">
-  <table class="table table-striped table-sm">
-  <thead id="tableitemhead"> 
+  <div class="table-resposive">
   
-  </thead>
-  <tbody id="tableitembody">
-    
+  <table id="tableitememnu" class="table table-sm table-striped">
+  <thead id="tableitemhead">
+            <tr>
+                <th></th>
+                
+           </tr>
+        </thead>
+        <tbody id="tableitembody">
         
-  </tbody>
-</table>
+           
+        </tbody>
+    </table>
 </div>
   </div>
 </div>
