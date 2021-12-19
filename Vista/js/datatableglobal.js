@@ -2,8 +2,9 @@ $(document).ready( function () {
     $('#example').DataTable(
         {
             dom: 'Bfrtip',
-            pageLength: 5,
-         
+            pageLength: 100,
+            "bInfo" : false,
+            "paging": false
         } );
 
 

@@ -22,24 +22,15 @@ include "menu.php";
 
 <!-- ************* DIV NOTAS ***********-->
 
-
-<div class="divDocumentador">
-
-	<div class="divtextarea">
+	<div class="sectionnotas">
 
                           <?php   
                                   $consultanotas = new Controlador_notas();
                                   $consultanotas -> notasControlador();
                           ?>
 
-
-
-
 	</div>
 
-
-
-  </div>
 <!-- DIV NOTAS -->
 
 

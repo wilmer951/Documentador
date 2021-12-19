@@ -17,7 +17,15 @@ class ModulosMVC
 				if(
 						$enlaces=="home"||
 						$enlaces=="login"||
-						$enlaces=="interfaz"
+						$enlaces=="interfaz"||
+						$enlaces=="psw"||
+						$enlaces=="cmd"||
+						$enlaces=="scp"||
+						$enlaces=="utili"||
+						$enlaces=="salir"
+						
+
+						
 						
 						
 						

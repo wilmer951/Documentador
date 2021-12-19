@@ -12,7 +12,7 @@
   <div class="row">
         <div class="form-group">
             <label>User</label>
-            <input type="text" name="nameUserLogin" class="inputmayuscula" required>
+            <input type="text" name="nameUserLogin" class="inputmayuscula mb-4" required>
             <div class="line"></div>
         </div>
   </div>
