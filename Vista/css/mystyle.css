@@ -10,6 +10,20 @@
 
 /* BTN*/
 
+/*En tu hoja de estilos */
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+h1,h2,h3,h4,h5{
+color: var(--original);
+
+}
+
+
+
+
+
 
 
 .btnone{
@@ -31,25 +45,34 @@
 
 
 
+
+
+
+
 /* MENU */
 
+.itemmenu a{ 
+
+  color: var(--original);
+  
 
 
 
 
-/* MENU */
+}
 
-.iconoItem img{
+.itemmenu:hover,a:hover{ 
 
-  width: 30px;
-  height: 30px;
-  margin-bottom:15px;
+  background: var(--original);
+  color: white;
 
 
 }
 
 
 
+
+/* MENU */
 
 
 
@@ -202,7 +225,126 @@ background: var(--original);
 
 
 
-/* TABLE ITEMMENU*/
+/* ventana emergente*/
+
+.divventanaemergente{
+
+height: 10vh;
+
+background: var(--original);
+  
+  
+
+}
+
+.divventanaemergente .card{
+
+  
+  width: 90%;
+  margin:auto;
+  
+}
 
 
-/* TABLE ITEMMENU*/
+input[type=search]{
+
+  width: 200px;
+  height: 10px;
+  font-size: 11px;
+  box-shadow: 3px var(--original);
+  
+  outline: none;
+
+}
+
+input[type=search]:focus{
+
+
+  
+  box-shadow: 0 3px 0 0 var(--original);
+
+}
+
+
+.btntablecopy
+{
+width: 25px;
+height: 25px;
+background: url(../Imagenes/iconocopy.png) no-repeat;
+background-size: 100%;
+}
+
+.btntablecopy:focus{
+box-shadow: 0 0 5px var(--original);
+}
+
+.divventanaemergente{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+
+}
+
+
+
+.divventanaemergente table{
+  font-size: 13px;
+  
+
+}
+
+.divventanaemergente td{
+  max-width:100%;
+  white-space:nowrap;
+}
+
+
+
+ .textareaoculto textarea{
+
+
+width: 0px;
+height: 0px;
+border: none;
+outline: none;
+box-shadow: none;
+position: fixed;
+bottom: 0;
+left: 0;
+
+
+}
+
+
+/* ventana emergente*/
+
+
+
+/* ESTRUCTURA DOCUMENTADOR */
+
+
+
+.sectionmenu{
+
+}
+
+.sectionnotas{
+  
+}
+
+
+.sectionmodulos{
+  
+}
+
+.sectitipificacion{
+  
+}
+
+.sectionbuttoncopy{
+  
+}
+
+
+
+/* ESTRUCTURA DOCUMENTADOR */
