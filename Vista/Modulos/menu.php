@@ -1,7 +1,8 @@
+<div class="sectionmenu">
 <a class="btn btn-sm btnone" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="offcanvasExample">
 menu
 </a>
-
+</div>
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
@@ -36,6 +37,7 @@ menu
         </a>
     </li>
 
+    
     <li class="list-group-item itemmenu">
     <a onClick="window.open(this.href, this.target, 'width=500,height=600'); return false;" target="_blank" href="index.php?ir=scp">
             <div style="width: 100%;">
