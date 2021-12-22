@@ -320,28 +320,102 @@ left: 0;
 
 
 
+
+
 /* ESTRUCTURA DOCUMENTADOR */
+
+
+.divinterfaz{
+margin: auto;
+  width: 90%;
+  
+  max-width: 400px;
+}
+
+.divinterfaz textarea:focus{
+  box-shadow: 0 0 3px 0 var(--original);
+}
+
+
+
+.divinterfaz select{
+  font-size: 11px;
+  height: 23px;
+  width: 100%;
+  box-shadow: 0 0 2px 0 var(--original);
+  }
+  
+.divinterfaz select:focus
+{
+    box-shadow: 0 0 3px 0 var(--original);
+}
+
+.divinterfaz input[type=text] 
+{
+    height: 15px;
+    font-size: 8px;
+}
+
+.divinterfaz input[type=text]:focus 
+{
+  box-shadow: 0 0 3px 0 var(--original);
+}
+
+
 
 
 
 .sectionmenu{
 
+
+
 }
 
-.sectionnotas{
-  
+
+
+
+.sectionnotas textarea{
+  height: 250px;
+  background-image:url(../../Vista/Imagenes/fondotextarea.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+opacity: 100;
+
 }
 
 
 .sectionmodulos{
+text-align: center;
+  height: 125px;
+
   
 }
 
 .sectitipificacion{
+  height: 75px;
+  
+  
+}
+
+.sectioninputs{
+  height: 100px;
+  text-align: center;
+  
+  
+  
+  
+  
   
 }
 
 .sectionbuttoncopy{
+
+  
+  height: 180px;
+  
+  
   
 }
 
