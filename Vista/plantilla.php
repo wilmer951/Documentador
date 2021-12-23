@@ -64,7 +64,10 @@ $mvc -> enlacesControlador();
 
 
 <script src="Vista/js/copy.js"></script>
+
 <script src="Vista/js/utilidades.js"></script>
+
+<script src="Vista/js/interfaz/interfaz_modulos.js"></script>
 
 
 

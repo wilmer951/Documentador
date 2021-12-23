@@ -34,14 +34,20 @@ include "menu.php";
 <!-- ************* INICIO DIV SELECCION MODULOS ***********-->
 <div class="sectionmodulos">
 <h6>modulos</h6>
-<select class="form-select form-select-sm mb-1" name="" id="">
+<select class="form-select form-select-sm mb-1" name="" id="selectmodulo">
+<option>seleccione una opción</option>
+                  <?php   
+                                $consultaModulo = new Controlador_interfaz();
+                                $consultaModulo -> consultaModulosControlador();
+                          ?>
+
+
+</select>
+<select class="form-select form-select-sm mb-1" id="selectSubmodulo">
 <option value="">Seleccione una opción</option>
 </select>
-<select class="form-select form-select-sm mb-1" name="" id="">
-<option value="">Seleccione una opción</option>
-</select>
-<select class="form-select form-select-sm mb-1" name="" id="">
-<option value="">Seleccione una opción</option>
+<select class="form-select form-select-sm mb-1" id="selectCategoria">
+<option value="0">seleccione una opción</option>
 
 </select>
 
