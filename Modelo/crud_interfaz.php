@@ -70,11 +70,21 @@ public static function consultaCategoriasModelo($submodulo,$tabla){
 public static function consultainputsModelo($categoria,$tabla){
 
 
-    $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE cate_id=$categoria and estado=1 ORDER BY cate_nom ASC");	
+    $stmt = Conexion::conectar()->prepare("SELECT inputs.inp_nom,inputs.inp_des from $tabla 
+
+RIGHT join inputs ON 
+categorias.cate_inp_des1=inputs.inp_id OR
+categorias.cate_inp_des2=inputs.inp_id or
+categorias.cate_inp_des1=inputs.inp_id OR
+categorias.cate_inp_des2=inputs.inp_id OR
+categorias.cate_inp_sol1=inputs.inp_id OR
+categorias.cate_inp_sol2=inputs.inp_id 
+
+WHERE categorias.cate_id=$categoria and estado=1 and inputs.inp_id!=1 ORDER BY inputs.inp_id ASC");	
 
 
     $stmt->execute();
-    return $stmt->fetch();
+    return $stmt->fetchAll();
 
     $stmt->close();
 

@@ -86,17 +86,13 @@ public static  function consultainputsControlador($categoriaConsulta){
 	
 	$respuesta = Datosinterfaz::consultainputsModelo($datosControlador,"categorias");
 
-	$inputs = array( 
-		"inputdesone"=>$respuesta["cate_inp_des1"],
-		"inputdestwo"=>$respuesta["cate_inp_des2"],
-		"inputdiaone"=>$respuesta["cate_inp_dia1"],
-		"inputdiatwo"=>$respuesta["cate_inp_dia2"],
-		"inputsolone"=>$respuesta["cate_inp_sol1"],
-		"inputsoltwo"=>$respuesta["cate_inp_sol2"],
-		
-	);
 
-	echo json_encode($inputs);
+
+
+
+	
+
+	echo json_encode($respuesta);
 
 
 }

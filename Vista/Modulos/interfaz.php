@@ -58,12 +58,10 @@ include "menu.php";
 
 <!-- ************* INICIO DIV INPUT ***********-->
 <div class="sectioninputs">
-  <input class="form-control form-control-sm mb-1" type="text">
-  <input class="form-control form-control-sm mb-1" type="text">
-  <input class="form-control form-control-sm mb-1" type="text">
+  
 
 
-  <button class="btn btn-sm btnone" style="font-size:12px;">Generar</button>
+  
 
 </div>
 <!-- ************* INICIO DIV INPUT ***********-->

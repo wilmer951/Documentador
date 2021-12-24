@@ -94,7 +94,7 @@ $("#selectCategoria").change(function(){
 
 
     
-var inputs = $("#selectSubmodulo option:selected").val();
+var inputs = $("#selectCategoria option:selected").val();
 
     
     
@@ -111,7 +111,22 @@ contentType: false,
 processData: false,
 success:function(respuesta){
     var resul = $.parseJSON(respuesta);
-    console.log(resul['inputdesone']);
+
+                $('.sectioninputs').html("");
+                for (let i = 0; i < resul.length; i++) {
+                    console.log(resul[i]['inp_nom']);
+
+
+                        $('.sectioninputs').append('<input name="'+resul[i]['inp_nom']+'" class="form-control form-control-sm mb-1" type="text" placeholder="'+resul[i]['inp_des']+'" ></input>')      
+                        
+            
+                    
+                }
+
+                $('.sectioninputs').append('<button class="btn btn-sm btnone" style="font-size:12px;">Generar</button>');
+                
+
+    
 
 }
 
