@@ -9,6 +9,10 @@ class Ajax_interfaz{
     public $consultasubmodulos;
     public $consultacategoria;
     public $consultainputs;
+    public $consultaPlantillas;
+
+
+    
 
     
 //********************* METODO CONSULTA SUBMODULOS  *******************************		
@@ -46,7 +50,7 @@ public function consultarCategoriaAjax(){
 
 //********************* METODO CONSULTA INPUTS  *******************************		
 
-public function consultarinputsiaAjax(){
+public function consultarinputsAjax(){
 
     $consultainputs = $this->consultainputs;
     
@@ -60,6 +64,18 @@ public function consultarinputsiaAjax(){
 
 
 
+//********************* METODO CONSULTA PLANTILLAS  *******************************		
+
+public function consultarPlantillasAjax(){
+
+    $categoriaId = $this->consultaPlantillas;
+    
+
+    $respuesta = Controlador_interfaz::consultarPlantillasControlador($categoriaId); 
+    echo $respuesta;
+    
+
+}
 
 
 }//FIN CLASE PRINCIPAL
@@ -94,6 +110,16 @@ if(isset( $_POST["categoria"])){
 	
 	$c = new Ajax_interfaz();
 	$c-> consultainputs = $_POST["categoria"];
-	$c -> consultarinputsiaAjax();
+	$c -> consultarinputsAjax();
+
+}
+
+
+
+if(isset( $_POST["categoriaId"])){
+	
+	$d = new Ajax_interfaz();
+	$d-> consultaPlantillas = $_POST["categoriaId"];
+	$d -> consultarPlantillasAjax();
 
 }

@@ -68,6 +68,8 @@ $mvc -> enlacesControlador();
 <script src="Vista/js/utilidades.js"></script>
 
 <script src="Vista/js/interfaz/interfaz_modulos.js"></script>
+<script src="Vista/js/interfaz/interfaz_plantillas.js"></script>
+<script src="Vista/js/interfaz/interfaz_viewDivhidden.js"></script>
 
 
 

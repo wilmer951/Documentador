@@ -1,5 +1,5 @@
 <div class="sectionmenu">
-<a class="btn btn-sm btnone" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="offcanvasExample">
+<a class="btn btn-sm btnone" style="font-size:11px;" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="offcanvasExample">
 menu
 </a>
 </div>

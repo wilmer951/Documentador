@@ -87,16 +87,28 @@ public static  function consultainputsControlador($categoriaConsulta){
 	$respuesta = Datosinterfaz::consultainputsModelo($datosControlador,"categorias");
 
 
-
-
-
-	
-
 	echo json_encode($respuesta);
 
 
 }
 
+
+
+//********************* METODO CONSULTA PLANTILLAS  *******************************	
+
+public static  function consultarPlantillasControlador($categoriaId){
+
+
+	$idcategoria=$categoriaId;
+
+	
+	$respuesta = Datosinterfaz::consultarPlantillasModelo($idcategoria,"categorias");
+
+
+	echo json_encode($respuesta);
+
+
+}
 
 
 

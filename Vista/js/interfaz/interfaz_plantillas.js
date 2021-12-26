@@ -1,0 +1,165 @@
+$("#generarplantilla").click(function(){
+
+
+    $('.divloading').css('display','none');
+    $('.divbotones').css('display','block');
+    
+
+    var categoriaId=$("#idcategoria").val();
+
+    var inpdespartone="";
+    var inpdespartwo="";
+    var inpdiapartone="";
+    var inpdiaparttwo="";
+    var inpsolpartone="";
+    var inpsolparttwo="";
+    
+
+    var despartone="";
+    var despartwo="";
+    var diapartone="";
+    var diaparttwo="";
+    var solpartone="";
+    var solparttwo="";
+
+
+    var descripcion="";
+    var diagnostico="";
+    var solucion="";
+    var cierre="";
+
+
+
+    var forminputs = $(this).parents('form:first');
+
+
+    
+
+var datos = new FormData();
+datos.append("categoriaId", categoriaId);
+
+$.ajax({
+url:"Vista/Modulos/ajax/ajax_interfaz.php",
+method:"POST",
+data: datos,
+cache: false,
+contentType: false,
+processData: false,
+success:function(respuesta){
+    var resul = $.parseJSON(respuesta);
+
+
+    console.log(resul[0]['nom_tip']);
+    $(".infotipificacion").html('<li> Tipo: '+resul[0]['nom_tip']+'</li>'+
+                                 '<li> Severidad: '+resul[0]['nom_fre']+'</li>'+ 
+                                 '<li> Frecuencia : '+resul[0]['nom_sev']+'</li>'                            
+                );
+
+
+
+
+
+    if (resul[0]['cate_des1']!=null) {
+        despartone=resul[0]['cate_des1'];
+    }
+
+    if (resul[0]['cate_des2']!=null) {
+        despartwo=resul[0]['cate_des2'];
+    }
+
+
+    if (resul[0]['cate_dia1']!=null) {
+        diapartone=resul[0]['cate_dia1'];
+    }
+
+    if (resul[0]['cate_des2']!=null) {
+        diaparttwo=resul[0]['cate_dia2'];
+    }
+
+
+
+    if (resul[0]['cate_sol1']!=null) {
+        solpartone=resul[0]['cate_sol1'];
+    }
+
+    if (resul[0]['cate_sol2']!=null) {
+        solparttwo=resul[0]['cate_sol2'];
+    }
+
+
+
+
+
+	$('input[type=text]',forminputs).each(function(){
+        
+            if ($(this).prop("id")==resul[0]['cate_inp_des1']) {
+                inpdespartone=$(this).val();
+            }
+
+            if ($(this).prop("id")==resul[0]['cate_inp_des2']) {
+                inpdespartwo=$(this).val();
+            }
+
+            if ($(this).prop("id")==resul[0]['cate_inp_dia1']) {
+                inpdiapartone=$(this).val();
+            }
+
+
+            if ($(this).prop("id")==resul[0]['cate_inp_dia2']) {
+                inpdiaparttwo=$(this).val();
+            }
+
+            if ($(this).prop("id")==resul[0]['cate_inp_sol1']) {
+                inpsolpartone=$(this).val();
+            }
+
+            if ($(this).prop("id")==resul[0]['cate_inp_sol2']) {
+                inpsolparttwo=$(this).val();
+            }
+
+    });
+
+    descripcion = despartone+inpdespartone+despartwo+inpdespartwo;
+    diagnostico= diapartone+inpdiapartone+diaparttwo+inpdiaparttwo;
+    solucion= solpartone+inpsolpartone+solparttwo+inpsolparttwo;
+    cierre="Funcioanrio autoriza el cierre del caso.";
+
+
+    console.log(descripcion);
+    console.log(diagnostico);
+    console.log(solucion);
+
+
+    $('.sectionbuttoncopy').append('<textarea  id="copydes">'+descripcion+'</textarea>');
+    $('.sectionbuttoncopy').append('<textarea  id="copydia">'+diagnostico+'</textarea>');
+    $('.sectionbuttoncopy').append('<textarea  id="copysol">'+solucion+'</textarea>');
+    $('.sectionbuttoncopy').append('<textarea  id="copycie">'+cierre+'</textarea>');
+
+
+    $('#verDesc').html('<div>'+descripcion+'</div>');
+    $('#verDia').html('<div>'+diagnostico+'</div>');
+    $('#verSol').html('<div>'+solucion+'</div>');
+    $('#verCie').html('<div>'+cierre+'</div>');
+
+
+
+   
+    
+
+    
+
+
+
+
+
+
+
+
+                
+}
+
+});
+
+
+
+});

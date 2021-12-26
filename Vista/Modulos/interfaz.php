@@ -57,46 +57,101 @@ include "menu.php";
 
 
 <!-- ************* INICIO DIV INPUT ***********-->
-<div class="sectioninputs">
+
+
+  <div class="sectioninputs">
+  <form action="" id="forminputs" onSubmit="return false;">
+
+  <div class="divinputs" ></div>
+  <button id="generarplantilla" class="btn btn-sm btnone" style="text-aling:auto; font-size:12px;">Generar</button>'
+</form>
   
-
-
-  
-
 </div>
+
+
+
 <!-- ************* INICIO DIV INPUT ***********-->
 
 
-
+<hr>
 
 <!-- ************* INICIO DIV TIPIFICACIÓN ***********-->
 <div class="sectitipificacion text-center py-4">
 
-<button class="btn btn-sm btn-success">ver tipificacion</button>
+
+<div class="infotipificacion">
+
+
+</div>
+
+
  
 </div>
 <!-- ************* FIN DIV TIPIFICACIÓN ***********-->
 
-
+<hr>
 
 <!-- ************* INICIO BOTONES ***********-->
-    <div class="sectionbuttoncopy">
+<div class="sectionbuttoncopy">
 
-    <div class="mb-1">
-        <button class="btn btn-sm btnone w-100">Descripcion</button>
-    </div>
-    <div class="mb-1">
-        <button class="btn btn-sm btnone w-100">Diagnostico</button>
-    </div>
-    <div class="mb-1">
-          <button class="btn btn-sm btnone w-100">Soluciojn</button>
-    </div>
-    <div class="mb-1">
-          <button class="btn btn-sm btnone w-100">cierre</button>
-    </div>
+
+<div class="divloading text-center mt-5" style="display:none;">
+    <div class="parpadea">Esperando...</div>
+      </div>
+
+
+<div class="divbotones" style="display:none;">
+  
+  
+            <div id="verDesc" class="divhidden"></div>
+            <div id="verDia" class="divhidden"></div>
+            <div id="verSol" class="divhidden"></div>
+            <div id="verCie" class="divhidden"></div>              
+
+          <div class="row mb-1">
+              <div class="col-10">
+                  <button class="btn btn-sm btnone" onclick="CopyToClipboard('copydes');">Descripcion</button>
+                  </div>
+              <div class="col-2">
+                    <div class="subtoton" id="verDescripcion"></div>
+              </div>
+          </div>
+
+          
+          <div class="row mb-1">
+              <div class="col-10">
+                <button class="btn btn-sm btnone" onclick="CopyToClipboard('copydia');">Diagnostico</button>
+              </div>
+              <div class="col-2">
+                <div class="subtoton" id="verDiagnostico"></div>
+              </div>
+          </div>
+
+
+          <div class="row mb-1">
+               <div class="col-10">
+                   <button class="btn btn-sm btnone" onclick="CopyToClipboard('copysol');">Soluciojn</button>
+              </div>
+              <div class="col-2">
+                  <div class="subtoton" id="verSolucion"></div>
+                </div>
+          </div>
+
+
+          <div class="row mb-1">
+              <div class="col-10">
+                  <button class="btn btn-sm btnone" onclick="CopyToClipboard('copycie');">cierre</button>
+              </div>
+              <div class="col-2">
+                  <div class="subtoton" id="verCierre"></div>
+                </div>
+          </div>
 
 
 </div>
+
+</div>
+
 <!-- ************* FIN BOTONES ***********-->
 
 

@@ -22,7 +22,10 @@ color: var(--original);
 
 
 
-
+li{
+  list-style: none;
+  padding-left: 0;
+}
 
 
 
@@ -375,7 +378,7 @@ margin: auto;
 
 
 .sectionnotas textarea{
-  height: 250px;
+  height: 280px;
   background-image:url(../../Vista/Imagenes/fondotextarea.png);
 background-position: center center;
 background-repeat: no-repeat;
@@ -394,10 +397,22 @@ text-align: center;
 }
 
 .sectitipificacion{
-  height: 75px;
+  height: 125px;
   
   
 }
+
+
+
+
+.sectitipificacion .infotipificacion{
+
+    font-size: 14PX;
+
+}
+
+
+
 
 .sectioninputs{
   height: 100px;
@@ -412,13 +427,112 @@ text-align: center;
 
 .sectionbuttoncopy{
 
-  
-  height: 180px;
+  margin: auto;
+  height: 140px;
+  text-align: center;
   
   
   
 }
 
+.sectionbuttoncopy button{
+
+width: 100%;
+
+ }
+
+
+ .subtoton{
+
+  width: 30px;
+  height: 30px;
+  background-image:url(../../Vista/Imagenes/iconoBuscar.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: 100%;
+  float:right;
+  border-radius: 50%;
+
+}
+
+.divhidden{
+
+  width: 0px;
+  height: 0px;
+  word-wrap: break-word;
+  overflow: hidden;
+
+}
+
+
+
+.divModal{
+  
+  margin:-250px auto;
+  position: absolute;
+  width: 215px;
+  height: 190px;
+  background: white;
+  box-shadow: 0 0 5px 0 var(--original);
+  padding: 4px 4px 4px 4px;
+  font­size: 0.8em;
+
+
+}
+
+ 
+
+
+.sectionbuttoncopy textarea{
+
+  width: 0px;
+  height: 0px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
+  
+  }
+
 
 
 /* ESTRUCTURA DOCUMENTADOR */
+
+
+
+/* ESTRUCTURA LOADING */
+
+
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

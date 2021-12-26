@@ -6,16 +6,10 @@ CONSULTAR SUBCATEGORIAS
 
 $("#selectmodulo").change(function(){
 
-			
-    $("#selectCategoria").val("0");
-    $('#divInput').css('display','none');
-    
-    $( "div.divbotonesCopiado" ).replaceWith( $( ".mensajeloading" ) );
-    $('.mensajeloading').css('display','block');
-    $('.divplantillanone').css('display','none');
 
+    $('.divbotones').css('display','none');
+    $('.divloading').css('display','block');
     
-    $(".divTipificacion").html("");
     
     
 
@@ -94,13 +88,13 @@ $("#selectCategoria").change(function(){
 
 
     
-var inputs = $("#selectCategoria option:selected").val();
+var idCategoria = $("#selectCategoria option:selected").val();
 
-    
-    
+
+
 
 var datos = new FormData();
-datos.append("categoria", inputs);
+datos.append("categoria", idCategoria);
 
 $.ajax({
 url:"Vista/Modulos/ajax/ajax_interfaz.php",
@@ -111,19 +105,19 @@ contentType: false,
 processData: false,
 success:function(respuesta){
     var resul = $.parseJSON(respuesta);
+    
+    
 
-                $('.sectioninputs').html("");
+                $('.divinputs').html("");
+                $('.divinputs').append('<input id="idcategoria" type="hidden" value="'+idCategoria+'"></input>');
                 for (let i = 0; i < resul.length; i++) {
-                    console.log(resul[i]['inp_nom']);
-
-
-                        $('.sectioninputs').append('<input name="'+resul[i]['inp_nom']+'" class="form-control form-control-sm mb-1" type="text" placeholder="'+resul[i]['inp_des']+'" ></input>')      
-                        
-            
                     
+
+                $('.divinputs').append('<input id="'+resul[i]['inp_id']+'" class="form-control form-control-sm mb-1" type="text" placeholder="'+resul[i]['inp_des']+'" ></input>')      
+                                    
                 }
 
-                $('.sectioninputs').append('<button class="btn btn-sm btnone" style="font-size:12px;">Generar</button>');
+                
                 
 
     
