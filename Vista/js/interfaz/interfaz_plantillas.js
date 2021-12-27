@@ -6,6 +6,7 @@ $("#generarplantilla").click(function(){
     
 
     var categoriaId=$("#idcategoria").val();
+    
 
     var inpdespartone="";
     var inpdespartwo="";
@@ -48,8 +49,6 @@ processData: false,
 success:function(respuesta){
     var resul = $.parseJSON(respuesta);
 
-
-    console.log(resul[0]['nom_tip']);
     $(".infotipificacion").html('<li> Tipo: '+resul[0]['nom_tip']+'</li>'+
                                  '<li> Severidad: '+resul[0]['nom_fre']+'</li>'+ 
                                  '<li> Frecuencia : '+resul[0]['nom_sev']+'</li>'                            
@@ -122,7 +121,7 @@ success:function(respuesta){
     descripcion = despartone+inpdespartone+despartwo+inpdespartwo;
     diagnostico= diapartone+inpdiapartone+diaparttwo+inpdiaparttwo;
     solucion= solpartone+inpsolpartone+solparttwo+inpsolparttwo;
-    cierre="Funcioanrio autoriza el cierre del caso.";
+    cierre="Funcioanrio autoriza el cierre del caso";
 
 
     console.log(descripcion);
@@ -142,20 +141,7 @@ success:function(respuesta){
     $('#verCie').html('<div>'+cierre+'</div>');
 
 
-
-   
-    
-
-    
-
-
-
-
-
-
-
-
-                
+           
 }
 
 });

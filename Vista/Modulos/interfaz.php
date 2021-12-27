@@ -24,7 +24,14 @@ include "menu.php";
 
 <!-- ************* INICIO DIV NOTAS ***********-->
 	<div class="sectionnotas mb-2">
-<textarea class="form-control" name="" id="">preuba</textarea>
+
+  <?php   
+                                  $consultanotas = new Controlador_notas();
+                                  $consultanotas -> notasControlador();
+                                  ?>
+
+
+
 
   </div>
 <!-- ************* FIN DIV NOTAS ***********-->

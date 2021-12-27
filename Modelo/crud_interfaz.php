@@ -109,7 +109,7 @@ inner JOIN severidad on
 categorias.cate_sev_id = severidad.id_sev
 inner join frecuencia ON
 categorias.cate_fre_id = frecuencia.id_fre
-WHERE categorias.cate_id=$categoria and estado=1");	
+    WHERE categorias.cate_id=$categoria and estado=1");	
 
 
     $stmt->execute();

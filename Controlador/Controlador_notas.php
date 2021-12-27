@@ -1,7 +1,10 @@
 <?php
 	
-	class Controlador_notas  {
+	class Controlador_notas{
 
+
+
+	
 
 //******************** CONSULTA NOTAS. //********************
 public static function notasControlador(){
@@ -14,11 +17,33 @@ public static function notasControlador(){
 
 	echo '
 
-	<input type="hidden" value="'.$_SESSION["usuario"].'" id="usuario">
+	
 	<textarea class="form-control" id="notas" placeholder="Tus notas">'.$respuesta["notas"].'</textarea>';
 
 
 		}
+
+
+
+
+//******************** ACTUALIZACIÓN DE NOTAS. //********************
+public static function actualizarNotasControador($actualizarnotas){
+
+	session_start();
+
+
+	if (isset($_SESSION["id"])) {
+		$id=$_SESSION["id"];
+
+		$notas=$actualizarnotas;
+
+		$respuesta = Datosnotas::actualizarNotasModelo($id,$notas,"usuarios");
+		echo $respuesta;
+		}
+
+}
+
+
 
 
 

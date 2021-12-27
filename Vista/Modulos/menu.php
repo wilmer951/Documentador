@@ -96,7 +96,7 @@ menu
     </li>
 
     <li class="list-group-item itemmenu">
-        <a  href="www.google.com">
+        <a  href="index.php?ir=salir">
             <div style="width: 100%;">
             <i class="bi bi-box-arrow-left"></i>
             <spam style="margin-left:8px;";>Salir</spam>

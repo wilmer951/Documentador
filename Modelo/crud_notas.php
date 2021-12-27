@@ -20,4 +20,34 @@
 
 
 
+
+
+# ACTUALIZAR NOTAS
+#-------------------------------------
+
+public static function actualizarNotasModelo($id,$notas,$tabla){
+
+
+
+	$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET notas='$notas' WHERE id='$id'");	
+
+if($stmt->execute())
+			{
+
+			return "success";
+
+			}
+
+		else{
+
+			return "error";
+
+			}
+
+		$stmt->close();
+
+}
+
+
+
 }
