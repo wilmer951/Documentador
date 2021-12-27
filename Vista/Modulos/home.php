@@ -39,7 +39,7 @@
         <div>
         	
           
-          <a href="index.php?ir=login" class="btn-services" onClick="window.open(this.href, this.target, 'width=240,height=820'); return false;" target="_blank">Abrir documentador</a>
+          <a href="index.php?ir=login" class="btn-services" onClick="window.open(this.href, this.target, 'width=220,height=820'); return false;" target="_blank">Abrir documentador</a>
           <a href="Backend/index.php?ir=login" class="btn-services">Ir a panel de control</a>
         </div>
       </div>
