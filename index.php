@@ -5,6 +5,7 @@ require_once "Controlador/Controlador_login.php";
 require_once "Controlador/Controlador_notas.php";
 require_once "Controlador/Controlador_itemmenu.php";
 require_once "Controlador/Controlador_interfaz.php";
+require_once "Controlador/Controlador_checklist.php";
 
 
 

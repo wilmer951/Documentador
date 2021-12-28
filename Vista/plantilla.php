@@ -73,6 +73,9 @@ $mvc -> enlacesControlador();
 <script src="Vista/js/interfaz/interfaz_savenotes.js"></script>
 
 
+<script src="Vista/js/checklist/checklist.js"></script>
+
+
 
 
 
