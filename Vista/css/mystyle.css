@@ -44,6 +44,23 @@ li{
   
 }
 
+
+.btntwo{
+  
+  background: white;
+  color: var(--original);
+  box-shadow: 0 0 5px var(--original);
+}
+
+.btntwo:hover{
+  
+  
+  font-weight: 500;
+  
+  color: var(--original);
+  
+}
+
 /* BTN*/
 
 

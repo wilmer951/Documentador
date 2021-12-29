@@ -53,7 +53,7 @@ menu
 
 
     <li class="list-group-item itemmenu">
-    <a onClick="window.open(this.href, this.target, 'width=500,height=600'); return false;" target="_blank" href="index.php?ir=utili">
+    <a onClick="window.open(this.href, this.target, 'width=500,height=800'); return false;" target="_blank" href="index.php?ir=utili">
             <div style="width: 100%;">
             <i class="bi bi-tools"></i>
             <spam style="margin-left:8px;";>Utilidades</spam>
