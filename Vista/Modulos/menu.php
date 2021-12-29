@@ -66,7 +66,7 @@ menu
 
 
     <li class="list-group-item itemmenu">
-        <a  href="www.google.com">
+    <a onClick="window.open(this.href, this.target, 'width=600,height=850'); return false;" target="_blank" href="index.php?ir=info">
             <div style="width: 100%;">
             <i class="bi bi-info-circle-fill"></i>
             <spam style="margin-left:8px;";>Informacion</spam>
@@ -78,7 +78,7 @@ menu
 
 
     <li class="list-group-item itemmenu">
-        <a  href="www.google.com">
+    <a onClick="window.open(this.href, this.target, 'width=600,height=850'); return false;" target="_blank" href="index.php?ir=directorio">
             <div style="width: 100%;">
             <i class="bi bi-telephone-inbound-fill"></i>
             <spam style="margin-left:8px;";>Directorio</spam>

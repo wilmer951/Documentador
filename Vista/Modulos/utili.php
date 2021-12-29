@@ -54,6 +54,7 @@
 
 
 
+
  <div class="card mb-3 mt-4" style="width: 90%;">
   <div class="card-header">Generar consulta de seriales terminados</div>
   <div class="card-body text-primary">

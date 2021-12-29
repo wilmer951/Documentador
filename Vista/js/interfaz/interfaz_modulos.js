@@ -49,7 +49,7 @@ CONSULTAR SUBMODULOS
 
 $("#selectSubmodulo").change(function(){
 
-
+    $("#selectCategoria").val("0");
     $('#divInput').css('display','none');
     $("#selectCategoria option[value="+0+"]").attr("selected",true);
     var categoria = $("#selectSubmodulo option:selected").val();
@@ -86,7 +86,7 @@ CONSULTAR INPUTS
 
 $("#selectCategoria").change(function(){
 
-
+    
     
 var idCategoria = $("#selectCategoria option:selected").val();
 

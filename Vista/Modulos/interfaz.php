@@ -83,7 +83,7 @@ include "menu.php";
 <hr>
 
 <!-- ************* INICIO DIV TIPIFICACIÓN ***********-->
-<div class="sectitipificacion text-center py-4">
+<div class="sectitipificacion text-center">
 
 
 <div class="infotipificacion">

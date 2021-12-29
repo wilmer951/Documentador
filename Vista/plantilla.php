@@ -23,12 +23,14 @@
 
 
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="Vista/css/Bootstrap-5-5.0.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="Vista/css/DataTables-1.11.3/css/dataTables.bootstrap5.min.css"/>
+
 
 <link rel="stylesheet" type="text/css" href="Vista/css/mystyle.css">
     
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap5.min.css"/>
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
@@ -54,11 +56,12 @@ $mvc -> enlacesControlador();
 
 
 <!--DATA TABLE-->    
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap5.js"></script>
+
+
+<script type="text/javascript" src="Vista/js/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="Vista/js/Bootstrap-5-5.0.1/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="Vista/js/DataTables-1.11.3/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="Vista/js/DataTables-1.11.3/js/dataTables.bootstrap5.min.js"></script>
 <script src="Vista/js/datatableglobal.js"></script>
 <!--DATA TABLE-->    
 

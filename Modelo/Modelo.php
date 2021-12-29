@@ -22,6 +22,8 @@ class ModulosMVC
 						$enlaces=="cmd"||
 						$enlaces=="scp"||
 						$enlaces=="utili"||
+						$enlaces=="info"||
+						$enlaces=="directorio"||
 						$enlaces=="mtablet"||
 						$enlaces=="checklist"||
 						$enlaces=="checkMtablet"||

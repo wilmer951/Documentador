@@ -343,6 +343,65 @@ box-shadow: 0 0 5px var(--original);
 }
 
 
+.divDirectorio iframe{
+
+  height: 500px;
+  
+  width: 100%;
+  overflow:hidden;
+  border:0;
+}
+
+
+
+/* *****************************************************************************************  */
+
+
+.conteinfo{
+
+  padding: 20px 5px 5px 5px;
+
+}
+
+
+.infoTigulo{
+  background: var(--original);
+  text-align: center;
+  color: white;
+
+
+}
+
+.articulo{
+
+  -webkit-box-shadow:0px 1px 1px var(--original);
+  -moz-box-shadow:0px 1px 1px var(--original);
+  box-shadow:0px 1px 1px var(--original);
+  margin-bottom: 20px;
+
+}
+
+
+.infotexto{
+
+  padding: 0 15px 5px 20px;
+  white-space:pre;
+}
+
+
+
+.divfecha{
+
+ font-size: 11px;
+ float: right;
+ margin-right: 5px;
+}
+
+
+
+
+
+
 /* ventana emergente checklist*/
 
 .info img{
@@ -523,7 +582,7 @@ text-align: center;
 }
 
 .sectitipificacion{
-  height: 125px;
+  height: 80px;
   
   
 }
