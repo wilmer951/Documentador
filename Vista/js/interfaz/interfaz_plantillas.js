@@ -129,10 +129,10 @@ success:function(respuesta){
     console.log(solucion);
 
 
-    $('.sectionbuttoncopy').append('<textarea  id="copydes">'+descripcion+'</textarea>');
-    $('.sectionbuttoncopy').append('<textarea  id="copydia">'+diagnostico+'</textarea>');
-    $('.sectionbuttoncopy').append('<textarea  id="copysol">'+solucion+'</textarea>');
-    $('.sectionbuttoncopy').append('<textarea  id="copycie">'+cierre+'</textarea>');
+    $('#copydes').val(descripcion);
+    $('#copydia').val(diagnostico);
+    $('#copysol').val(solucion);
+    $('#copycie').val(cierre);
 
 
     $('#verDesc').html('<div>'+descripcion+'</div>');

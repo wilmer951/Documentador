@@ -1,3 +1,5 @@
+<?php include "controlsesion.php"?>
+
 <div class="divventanaemergente">
   <div class="card">
     <div class="card-body ">

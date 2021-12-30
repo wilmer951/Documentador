@@ -1,15 +1,5 @@
-<?php
-session_start();
+<?php include "controlsesion.php";  ?>
 
-if(!$_SESSION["validar"]){
-
-  header("location:index.php?ir=login");
-
-  exit();
-
-}
-
-?>
 
 <div class="divinterfaz"><!-- ************* INICIO DIV INTERFAZ ***********-->
 
@@ -110,6 +100,14 @@ include "menu.php";
 <div class="divbotones" style="display:none;">
   
   
+<textarea id="copydes" ></textarea>
+<textarea id="copydia" ></textarea>
+<textarea id="copysol" ></textarea>
+<textarea id="copycie" ></textarea>
+
+
+
+
             <div id="verDesc" class="divhidden"></div>
             <div id="verDia" class="divhidden"></div>
             <div id="verSol" class="divhidden"></div>
