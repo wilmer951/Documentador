@@ -70,6 +70,8 @@ $mvc -> enlacesControlador();
 
 <script src="Vista/js/utilidades/anullserial.js"></script>
 <script src="Vista/js/utilidades/navegation.js"></script>
+<script src="Vista/js/utilidades/codveri.js"></script>
+<script src="Vista/js/utilidades/edad.js"></script>
 
 <script src="Vista/js/interfaz/interfaz_modulos.js"></script>
 <script src="Vista/js/interfaz/interfaz_plantillas.js"></script>

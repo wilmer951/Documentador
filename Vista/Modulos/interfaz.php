@@ -41,7 +41,7 @@ include "menu.php";
 
 </select>
 <select class="form-select form-select-sm mb-1" id="selectSubmodulo">
-<option value="">Seleccione una opción</option>
+<option value="0">Seleccione una opción</option>
 </select>
 <select class="form-select form-select-sm mb-1" id="selectCategoria">
 <option value="0">seleccione una opción</option>
@@ -75,9 +75,9 @@ include "menu.php";
 <!-- ************* INICIO DIV TIPIFICACIÓN ***********-->
 <div class="sectitipificacion text-center">
 
+<div class="imglogo"><img class="img-fluid" src="Vista/Imagenes/logoIdemia.png" alt=""></div>
 
 <div class="infotipificacion">
-
 
 </div>
 

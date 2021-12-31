@@ -1,9 +1,10 @@
 $("#generarplantilla").click(function(){
-
+    
 
     $('.divloading').css('display','none');
     $('.divbotones').css('display','block');
-    
+    $('.imglogo').css('display','none'); 
+    $('.infotipificacion').css('display','block');
 
     var categoriaId=$("#idcategoria").val();
     

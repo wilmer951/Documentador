@@ -6,9 +6,13 @@ CONSULTAR SUBCATEGORIAS
 
 $("#selectmodulo").change(function(){
 
-
+        
+    $("#selectCategoria").empty().append('<option selected>Seleccione una opcion</option>');
     $('.divbotones').css('display','none');
     $('.divloading').css('display','block');
+    $('.infotipificacion').css('display','none');
+
+
     
     
     

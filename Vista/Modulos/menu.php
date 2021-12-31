@@ -20,7 +20,7 @@ menu
   
   
   <li class="list-group-item itemmenu">
-        <a  onClick="window.open(this.href, this.target, 'width=700,height=900'); return false;" target="_blank" href="index.php?ir=psw">
+        <a  onClick="window.open(this.href, this.target, 'width=640,height=900'); return false;" target="_blank" href="index.php?ir=psw">
             <div style="width: 100%; height:100;">
               <i class="bi bi-bag-plus-fill"></i>
                 <spam style="margin-left:8px;";>Contraseñas</spam>
@@ -29,7 +29,7 @@ menu
     </li>
 
     <li class="list-group-item itemmenu">
-        <a onClick="window.open(this.href, this.target, 'width=500,height=600'); return false;" target="_blank" href="index.php?ir=cmd">
+        <a onClick="window.open(this.href, this.target, 'width=500,height=900'); return false;" target="_blank" href="index.php?ir=cmd">
             <div style="width: 100%;">
             <i class="bi bi-terminal-fill"></i>
             <spam style="margin-left:8px;";>Comandos</spam>
@@ -53,7 +53,7 @@ menu
 
 
     <li class="list-group-item itemmenu">
-    <a onClick="window.open(this.href, this.target, 'width=500,height=800'); return false;" target="_blank" href="index.php?ir=utili">
+    <a onClick="window.open(this.href, this.target, 'width=550,height=850'); return false;" target="_blank" href="index.php?ir=utili">
             <div style="width: 100%;">
             <i class="bi bi-tools"></i>
             <spam style="margin-left:8px;";>Utilidades</spam>
