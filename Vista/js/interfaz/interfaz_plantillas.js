@@ -122,7 +122,7 @@ success:function(respuesta){
     descripcion = despartone+inpdespartone+despartwo+inpdespartwo;
     diagnostico= diapartone+inpdiapartone+diaparttwo+inpdiaparttwo;
     solucion= solpartone+inpsolpartone+solparttwo+inpsolparttwo;
-    cierre="Funcioanrio autoriza el cierre del caso";
+    cierre="Funcionario autoriza el cierre del caso";
 
 
     console.log(descripcion);

@@ -66,6 +66,45 @@ public  static function ultimoLoginModelo($datosModelo, $tabla){
 
 }
 
+#-------------------------------------
+
+public static function cambiarPassModelo($datosModelo,$tabla){
+
+
+
+    $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET 
+     password=:password,id_login=0 where usuario=:usuario");	
+    
+    
+    $stmt->bindParam(":password", $datosModelo["password"], PDO::PARAM_STR);
+    $stmt->bindParam(":usuario", $datosModelo["usuario"], PDO::PARAM_STR);
+
+
+
+
+
+    if($stmt->execute())
+        {
+
+        return "success";
+
+        }
+
+    else{
+
+        return "error";
+
+        }
+
+    $stmt->close();
+
+
+
+
+}
+
+
+
 
 
 

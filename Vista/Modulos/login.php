@@ -9,10 +9,10 @@
 
 <form class="formlogin" method="post">
   
-  <div class="row">
+  <div class="row mb-4">
         <div class="form-group">
             <label>User</label>
-            <input type="text" name="nameUserLogin" class="inputmayuscula mb-4" required>
+            <input type="text" name="nameUserLogin" class="inputmayuscula" required>
             <div class="line"></div>
         </div>
   </div>

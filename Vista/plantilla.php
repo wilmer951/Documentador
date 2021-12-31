@@ -34,6 +34,8 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+<script src="Vista/js/sweetalert.js"></script>
+
 </head>
 
 <body id="body">
@@ -80,6 +82,14 @@ $mvc -> enlacesControlador();
 
 
 <script src="Vista/js/checklist/checklist.js"></script>
+
+
+<script src="Vista/js/validaciones/cambioPassword.js"></script>
+
+<script src="Vista/js/reconexionlogin.js"></script>
+
+
+
 
 
 

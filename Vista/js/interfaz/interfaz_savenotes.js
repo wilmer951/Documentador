@@ -14,6 +14,17 @@ $("#notas").change(function(){
 
 				console.log(respuesta);
 
+
+
+
+			if (respuesta!="success") {
+				$("#modalreconexion").modal("show");
+													  
+			}
+
+
+
+
 		}
 
 

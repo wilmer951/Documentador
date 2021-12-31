@@ -15,7 +15,7 @@ a:link, a:visited, a:active {
   text-decoration:none;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6,h7{
 color: var(--original);
 
 }
@@ -106,6 +106,33 @@ li{
 
 
 
+/* FORMULARIOS */
+
+.form-control
+{
+    
+    box-shadow: 0 0 2px 0 var(--original);
+}
+
+.form-control:focus 
+{
+  box-shadow: 0 0 3px 0 var(--original);
+}
+
+.form-select{
+  box-shadow: 0 0 3px var(--original);
+  color: var(--original);
+  
+
+}
+
+.form-select:focus{
+  box-shadow: 0 0 4px var(--original);
+  
+  
+
+}
+/* FORMULARIOS */
 
 
 
@@ -306,41 +333,6 @@ background: var(--original);
 
 
 
-.card input[type=text]{
-    box-shadow: 0 0 2px var(--original);
-  color: var(--original);
-  
- }
-
-
-  .card select{
-    box-shadow: 0 0 3px var(--original);
-    color: var(--original);
-    
-
-  }
-
-  .card select:focus{
-    box-shadow: 0 0 4px var(--original);
-    
-    
-
-  }
-
-
-
-  .card textarea{
-
-    box-shadow: 0 0 3px var(--original);
-    width: 100%;
-    color: var(--original);
-   }
-  
-   .card textarea:focus{
-
-    box-shadow: 0 0 4px var(--original);
-    
-   }
 
 
 .divventanaemergente img{
@@ -597,11 +589,6 @@ margin: auto;
   max-width: 400px;
 }
 
-.divinterfaz textarea:focus{
-  box-shadow: 0 0 3px 0 var(--original);
-}
-
-
 
 .divinterfaz select{
   font-size: 11px;
@@ -610,22 +597,12 @@ margin: auto;
   box-shadow: 0 0 2px 0 var(--original);
   }
   
-.divinterfaz select:focus
-{
-    box-shadow: 0 0 3px 0 var(--original);
-}
 
 .divinterfaz input[type=text] 
 {
     height: 15px;
     font-size: 8px;
 }
-
-.divinterfaz input[type=text]:focus 
-{
-  box-shadow: 0 0 3px 0 var(--original);
-}
-
 
 
 

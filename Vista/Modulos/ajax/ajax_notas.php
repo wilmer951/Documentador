@@ -21,7 +21,7 @@ public function actualizarnotasajax(){
     $actualizarnotas = $this->actualizarnotas;
     
     $respuesta = Controlador_notas::actualizarNotasControador($actualizarnotas); 
-
+    
     
 
 }
