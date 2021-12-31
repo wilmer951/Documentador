@@ -125,7 +125,7 @@ include "menu.php";
           
           <div class="row mb-1">
               <div class="col-10">
-                <button class="btn btn-sm btnone" onclick="CopyToClipboard('copydia');">Diagnostico</button>
+                <button class="btn btn-sm btnone" onclick="CopyToClipboard('copydia');">Diagnóstico</button>
               </div>
               <div class="col-2">
                 <div class="subtoton" id="verDiagnostico"></div>
@@ -135,7 +135,7 @@ include "menu.php";
 
           <div class="row mb-1">
                <div class="col-10">
-                   <button class="btn btn-sm btnone" onclick="CopyToClipboard('copysol');">Soluciojn</button>
+                   <button class="btn btn-sm btnone" onclick="CopyToClipboard('copysol');">Solución</button>
               </div>
               <div class="col-2">
                   <div class="subtoton" id="verSolucion"></div>
@@ -165,6 +165,75 @@ include "menu.php";
 
 
 </div><!-- ************* FIN DIV INTERFAZ ***********-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MODAL RECONEXIÓN DE SESION -->
+<div id="modalreconexion" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="staticBackdropLabel">Atención</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+<form id="formloginrecone" class="formlogin" onsubmit="return:false;">
+  
+  <div class="row mb-4">
+        <div class="form-group">
+            <label>User</label>
+            <input type="text" name="nameUserLogin" class="inputmayuscula" required>
+            <div class="line"></div>
+        </div>
+  </div>
+  
+
+
+  <div class="row mb-4">
+      <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="namePasswordLogin" required>
+          <div class="line"></div>
+      </div>
+    </div>
+
+  <div class="row">
+  
+  <button id="btnreconectar" class="btn btn-sm btnone ">Reconectar</button>
+  </div>
+
+  <div id="alertreconection" class="alert-danger mt-2 py-1 px-2 text-center">Lo sentimos se prento una desconexión nesperada ingresa nuevamente tus credenciales.</div>
+
+</form>
+
+
+
+
+
+
+
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 
 
