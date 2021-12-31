@@ -1,6 +1,8 @@
 $("#generarplantilla").click(function(){
     
 
+    preuba();
+
     $('.divloading').css('display','none');
     $('.divbotones').css('display','block');
     $('.imglogo').css('display','none'); 

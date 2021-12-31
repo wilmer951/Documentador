@@ -185,7 +185,7 @@ include "menu.php";
 
 
 <!-- MODAL RECONEXIÓN DE SESION -->
-<div id="modalreconexion" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div id="modalreconexion" class="modal fade"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -194,7 +194,7 @@ include "menu.php";
       </div>
       <div class="modal-body">
 
-<form id="formloginrecone" class="formlogin" onsubmit="return:false;">
+  <form id="formloginrecone" class="formlogin" onsubmit="return:false;">
   
   <div class="row mb-4">
         <div class="form-group">
@@ -221,7 +221,7 @@ include "menu.php";
 
   <div id="alertreconection" class="alert-danger mt-2 py-1 px-2 text-center">Lo sentimos se prento una desconexión nesperada ingresa nuevamente tus credenciales.</div>
 
-</form>
+  </form>
 
 
 
@@ -236,6 +236,28 @@ include "menu.php";
 </div>
 
 
+
+<!-- MODAL MENSAJES DE ALERTA -->
+<div id="modalmsgalert" class="modal fade"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="staticBackdropLabel">Atención</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+<div id="artialert"></div>
+
+  
+<div class="mt-4 text-center">
+<button  class="btn btn-sm btntwo "  data-bs-dismiss="modal" aria-label="Close" id="btnconfirmarlectura">Confirmar lectura</button>
+</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 
                                 
