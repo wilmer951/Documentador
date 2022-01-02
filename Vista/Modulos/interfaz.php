@@ -30,7 +30,7 @@ include "menu.php";
 
 <!-- ************* INICIO DIV SELECCION MODULOS ***********-->
 <div class="sectionmodulos">
-<h6>modulos</h6>
+<h6>Módulos</h6>
 <select class="form-select form-select-sm mb-1" name="" id="selectmodulo">
 <option>seleccione una opción</option>
                   <?php   

@@ -69,7 +69,7 @@ menu
     <a onClick="window.open(this.href, this.target, 'width=600,height=850'); return false;" target="_blank" href="index.php?ir=info">
             <div style="width: 100%;">
             <i class="bi bi-info-circle-fill"></i>
-            <spam style="margin-left:8px;";>Informacion</spam>
+            <spam style="margin-left:8px;";>Información</spam>
             </div>
         </a>
     </li>
