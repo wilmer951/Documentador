@@ -1,4 +1,3 @@
-
 <?php
 	
 	class Controlador_interfaz{
@@ -76,7 +75,7 @@ public static  function consultaCategoriasControlador($categoriaConsulta){
 
 
 
-//********************* METODO CONSULTA CATEGORIAS  *******************************	
+//********************* METODO CONSULTA INPUTS CATEGORIAS  *******************************	
 
 public static  function consultainputsControlador($categoriaConsulta){
 
@@ -117,5 +116,5 @@ public static  function consultarPlantillasControlador($categoriaId){
 
 
 
-}//fin clase principall
+}//fin clase principal
 

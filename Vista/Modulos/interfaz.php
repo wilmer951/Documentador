@@ -145,7 +145,7 @@ include "menu.php";
 
           <div class="row mb-1">
               <div class="col-10">
-                  <button class="btn btn-sm btnone" onclick="CopyToClipboard('copycie');">cierre</button>
+                  <button class="btn btn-sm btnone" onclick="CopyToClipboard('copycie');">Cierre</button>
               </div>
               <div class="col-2">
                   <div class="subtoton" id="verCierre"></div>

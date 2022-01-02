@@ -11,7 +11,6 @@ require_once "Controlador/Controlador_informacion.php";
 
 
 require_once "Modelo/Modelo.php";
-require_once "Modelo/crud.php";
 require_once "Modelo/crud_login.php";
 require_once "Modelo/crud_notas.php";
 require_once "Modelo/crud_itemmenu.php";

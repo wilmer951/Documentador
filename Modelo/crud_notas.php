@@ -1,6 +1,8 @@
 <?php
+	
 	require_once "Conexion.php";
-	class Datosnotas extends Conexion{
+
+class Datosnotas extends Conexion{
 
 # CONSULTA NOTAS
 #-------------------------------------
@@ -25,29 +27,30 @@
 # ACTUALIZAR NOTAS
 #-------------------------------------
 
-public static function actualizarNotasModelo($id,$notas,$tabla){
+	public static function actualizarNotasModelo($id,$notas,$tabla){
 
 
 
-	$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET notas='$notas' WHERE id='$id'");	
 
-if($stmt->execute())
-			{
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET notas='$notas' WHERE id='$id'");	
 
-			return "success";
+				if($stmt->execute())
+					{
 
-			}
+					return "success";
 
-		else{
+					}
 
-			return "error";
+				else{
 
-			}
+					return "error";
+
+					}
 
 		$stmt->close();
 
-}
+	}
 
 
 
-}
+}//FIN CLASE PRINCIPAL

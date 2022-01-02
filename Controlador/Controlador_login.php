@@ -1,4 +1,4 @@
-<?php //************* METODO REDIRECCION A PLANTILLA **************
+<?php
 
 class Controlador_login {
 
@@ -65,7 +65,7 @@ public function loginControlador(){
 
 
 
-//********************* METODO LOGIN  *******************************	
+//********************* METODO RECONECTAR LOGIN  *******************************	
 
 
 public function reconectarLoginControlador($datos){

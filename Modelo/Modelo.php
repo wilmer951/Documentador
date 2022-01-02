@@ -1,14 +1,9 @@
 <?php
 
-
-//******************** FUNCION ENLACES ************************
-
-		
-class ModulosMVC
-	{
+class ModulosMVC{
 
 
-
+//******************** METODO ENLACES ************************
 		public static function enlacesModelos($enlaces)
 
 			{
@@ -32,13 +27,6 @@ class ModulosMVC
 						$enlaces=="utili"||
 						$enlaces=="salir"
 						
-
-						
-						
-						
-						
-					
-					
 
 							)
 
@@ -68,9 +56,4 @@ class ModulosMVC
 
 
 
-	}
-
-
-
-?>
-
+}//FIN CLASE PRINCIPAL

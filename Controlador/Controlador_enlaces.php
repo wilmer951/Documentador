@@ -1,8 +1,10 @@
-﻿<?php //************* METODO REDIRECCION A PLANTILLA **************
+﻿<?php
 
 class Controlador_enlaces {
 
 
+
+      //************* METODO CARGAR PLANTILLA PLANTILLA **************
 public function plantilla()
             {
             include "Vista/plantilla.php";
@@ -30,15 +32,6 @@ public function enlacesControlador(){
 
             include $respuesta;
 }
-
-
-
-
-
-
-
-
-
 
 
 

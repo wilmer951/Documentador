@@ -1,8 +1,11 @@
-<?php //************* INFORMACION  **************
+<?php
 
 class Controlador_informacion {
 
 
+
+
+//************* METODO CONSULTA DE INFORMACION  **************	
 
 public static function consultaarticulosinfoContralador(){
 
@@ -18,15 +21,13 @@ public static function consultaarticulosinfoContralador(){
 
 		echo '
         <div class="articulo">
-        <div class="infoTigulo">'.$item["tit_art"].'
+			<div class="infoTigulo">'.$item["tit_art"].'            
+				<div class="divfecha">Actu. '.$fecha.'</div>
+			</div>
             
-            <div class="divfecha">Actu. '.$fecha.'</div>
+        	<div class="infotexto">'.$item["text_art"].'</div>
 
-        </div>
-            
-            <div class="infotexto">'.$item["text_art"].'</div>
-
-</div>
+		</div>
 
 
 		';

@@ -1,10 +1,11 @@
-<?php //************* METODO CHECKLIST **************
+<?php
 
 class Controlador_checklist {
 
 
 
 
+//************* METODO CHECKLIST ADAPTADOR DE RED MTABLET **************	
 
 public function chmtabletAdaptadorcontrolador(){
 
@@ -113,13 +114,12 @@ public function chmtabletAdaptadorcontrolador(){
 
 		echo '
 		<div class="textareaoculto">
-		<textarea id="copycheck1">Se identifica que la Mtablet se encuentra conectada por medio de Adaptador'.$estadoitem1.''.$estadoitem22.''.$estadoitem3.''.$estadoitem4.''.$estadoitem5.''.$estadoitem6.''.$estadoitem77.''.$estadofinal.'</textarea>
-		</div>
-		
-<div class="text-center">
-<button class="btn btn-success" onclick="CopyToClipboard(\'copycheck1\')">Copy</button>
+				<textarea id="copycheck1">Se identifica que la Mtablet se encuentra conectada por medio de Adaptador'.$estadoitem1.''.$estadoitem22.''.$estadoitem3.''.$estadoitem4.''.$estadoitem5.''.$estadoitem6.''.$estadoitem77.''.$estadofinal.'</textarea>
+				</div>
 
-</div>
+		<div class="text-center">
+				<button class="btn btn-success" onclick="CopyToClipboard(\'copycheck1\')">Copy</button>
+		</div>
 		';
 
 
@@ -140,7 +140,7 @@ public function chmtabletAdaptadorcontrolador(){
 
 
 
-//******************** CHECK MTABLET SIM. //********************
+//************* METODO CHECKLIST SIM DE RED MTABLET **************	
 
 
 public function chmtabletSimControlador(){

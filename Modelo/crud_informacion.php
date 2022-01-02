@@ -1,6 +1,8 @@
 <?php
+
 	require_once "Conexion.php";
-	class Datosinfo extends Conexion{
+	
+class Datosinfo extends Conexion{
 
 
 

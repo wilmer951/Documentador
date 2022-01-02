@@ -1,34 +1,4 @@
 
-// FUNCIONES PARA CAMBIAR BOTON DE SOLUCÍÓN A CHECK
-
-
-
-$(document).ready(function() { 
-
-const check=$("#checkl").val();
-
-
-if (check=="" || check=='undefined' || check==null || check==false){
-
- $("#bottonSolucion").css('display','block');
- $("#bottonSolucionAl").css('display','none');
-
-}else {
-
-$("#bottonSolucion").css('display','none');
- $("#bottonSolucionAl").css('display','block');  
-}
-
-
-
-
-
- });
-
-
-
-
-
 // FUNCIONES PARA MOSTRAR DIV OCULTOS EN CHECKLIST
 
 $("#search").on("keyup", function() {
@@ -258,34 +228,3 @@ $("#resulitemst").change(function(){
 
 
 
-
-// FUNCIONES PARA MOSTRAR BOTON VER CHECK
-
-
-$(document).ready(function() { 
-
-var checklist=$("#checkl").val();
-  
-
-if(checklist!=null) {
-
-
-
-
-$("#bottonSolucion").css('display','none');
-$("#bottonSolucionAl").css('display','block');
-$('#aid').attr('href',"index.php?ir="+checklist);
-
-
-
-
-}
-
-if (checklist==null || checklist=="" || checklist=='undefined') {
-
- $("#bottonSolucion").css('display','block');
- $("#bottonSolucionAl").css('display','none');
-
-}
-
- });

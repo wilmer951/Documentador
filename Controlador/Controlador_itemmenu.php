@@ -3,12 +3,11 @@
 	class Controlador_itemmenu{
 
 
-        public static function ItemMenuPswControlador(){
 
+  //********************* METODO CONSULTA PASSWORD  *******************************	
+    public static function ItemMenuPswControlador(){
 
-                    
-
-                    $respuesta = Datositemmenu::consultaItemdelo("psw");
+           $respuesta = Datositemmenu::consultaItemdelo("psw");
 
                     	foreach ($respuesta as $row => $item) {
 
@@ -50,11 +49,13 @@
                 
 
               
-                }
+  }
 
             
 
-                public static function ItemMenuCmdControlador(){
+//********************* METODO CONSULTA COMANDOS  *******************************	
+
+  public static function ItemMenuCmdControlador(){
 
 
                     
@@ -80,15 +81,12 @@
               
 
             
-              }
+   }
     
 
-    
-    
-              public static function ItemMenuScpControlador(){
+ //********************* METODO CONSULTA SCRIPTS  *******************************	
 
-
-                    
+  public static function ItemMenuScpControlador(){
 
                 $respuesta = Datositemmenu::consultaItemdelo("scp");
 
@@ -112,7 +110,7 @@
             
 
           
-            }
+  }
   
 
 
