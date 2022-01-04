@@ -7,7 +7,7 @@
 <table id="example" class="table table-sm table-striped" style="width:100%">
 
         <thead class="text-center">
-        <h5>Comnados</h5>
+        <h5>Comandos</h5>
             <tr>
                 
                 <th>Comando</th>
