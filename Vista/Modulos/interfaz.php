@@ -219,7 +219,7 @@ include "menu.php";
   <button id="btnreconectar" class="btn btn-sm btnone ">Reconectar</button>
   </div>
 
-  <div id="alertreconection" class="alert-danger mt-2 py-1 px-2 text-center">Lo sentimos se prento una desconexión nesperada ingresa nuevamente tus credenciales.</div>
+  <div id="alertreconection" class="alert-danger mt-2 py-1 px-2 text-center">Lo sentimos se prento una desconexión inesperada ingresa nuevamente tus credenciales.</div>
 
   </form>
 

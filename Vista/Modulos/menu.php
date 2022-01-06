@@ -95,6 +95,18 @@ menu
         </a>
     </li>
 
+
+    <li class="list-group-item itemmenu">
+    <a onClick="window.open(this.href, this.target, 'width=600,height=870'); return false;" target="_blank" href="index.php?ir=postularplanti">
+            <div style="width: 100%;">
+            <i class="bi bi-list-check"></i>
+            <spam style="margin-left:8px;";>Postular plantilla</spam>
+            </div>
+        </a>
+    </li>
+    
+
+
     <li class="list-group-item itemmenu">
         <a  href="index.php?ir=salir">
             <div style="width: 100%;">

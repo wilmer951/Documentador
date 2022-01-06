@@ -24,6 +24,7 @@ class ModulosMVC{
 						$enlaces=="checklist"||
 						$enlaces=="checkMtablet"||
 						$enlaces=="checkMtablet2"||
+						$enlaces=="postularplanti"||
 						$enlaces=="utili"||
 						$enlaces=="salir"
 						
