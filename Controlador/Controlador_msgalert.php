@@ -12,7 +12,10 @@ class Controlador_msgalert {
 
         $conf_lectura= Datosmsgalert::consultarLecturaUusarioModelo($usuario,"usuarios");
             
-        
+        $estadoalert=array(
+            "alertst"=>"none"
+
+        );
             $respuesta = Datosmsgalert::consultaAlertsModelo("alerts");
         
             if ($respuesta["est_alert"]==1 & $conf_lectura["lec_alert"]==1) {
@@ -20,7 +23,7 @@ class Controlador_msgalert {
 
             }else{
 
-                echo "none";
+                echo json_encode($estadoalert);
             }
         
 

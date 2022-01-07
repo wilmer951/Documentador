@@ -1,5 +1,5 @@
 
-    function preuba(){
+    function consulMsgAlert(){
 
     var conmsg = "yes";
 
@@ -18,9 +18,12 @@
 
             var resulalert = $.parseJSON(respuesta);
             console.log(resulalert);
+            if(resulalert['alertst']!='none'){
 
             $('#artialert').html(resulalert[0]);
             $("#modalmsgalert").modal("show");
+
+        }
 
 		}
 

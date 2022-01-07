@@ -1,7 +1,10 @@
 $("#generarplantilla").click(function(){
     
 
-    preuba();
+    consulMsgAlert();
+
+    $(".infotipificacion").html("");
+    
 
     $('.divloading').css('display','none');
     $('.divbotones').css('display','block');
@@ -52,6 +55,7 @@ processData: false,
 success:function(respuesta){
     var resul = $.parseJSON(respuesta);
 
+    console.log(resul);
     $(".infotipificacion").html('<li> Tipo: '+resul[0]['nom_tip']+'</li>'+
                                  '<li> Severidad: '+resul[0]['nom_fre']+'</li>'+ 
                                  '<li> Frecuencia : '+resul[0]['nom_sev']+'</li>'                            

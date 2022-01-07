@@ -26,6 +26,7 @@ class ModulosMVC{
 						$enlaces=="checkMtablet2"||
 						$enlaces=="postularplanti"||
 						$enlaces=="utili"||
+						$enlaces=="sesionexpired"||
 						$enlaces=="salir"
 						
 
