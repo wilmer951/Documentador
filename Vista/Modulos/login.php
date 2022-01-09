@@ -44,3 +44,23 @@
             ?>  
 </div>
 
+
+
+<script>
+
+window.onload = function(){consulterminos();}
+ 
+function consulterminos(){
+
+  var ventana_ancho = $(window).width();
+  var ventana_alto = $(window).height();
+  
+
+  if (ventana_ancho>400) {
+    
+    $(location).attr('href',"index.php?ir=home");
+  }
+	
+}
+
+</script>

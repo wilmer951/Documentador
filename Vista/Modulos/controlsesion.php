@@ -4,7 +4,7 @@ session_start();
 
 if(!$_SESSION["validar"]){
 
-  header("location:index.php?ir=sesionexpired");
+  header("location:index.php?ir=login");
 
   exit();
 
