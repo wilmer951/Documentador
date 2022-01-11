@@ -48,9 +48,9 @@
 
 <script>
 
-window.onload = function(){consulterminos();}
+window.onload = function(){redimlogin();}
  
-function consulterminos(){
+function redimlogin(){
 
   var ventana_ancho = $(window).width();
   var ventana_alto = $(window).height();

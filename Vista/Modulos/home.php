@@ -104,3 +104,15 @@
 </div>
 
 
+
+
+
+<script>
+window.onload = function(){consulterminos();}
+ 
+function consulterminos(){
+
+  $("#terminos").modal("show");
+}
+
+</script>
